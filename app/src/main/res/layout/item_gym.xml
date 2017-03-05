@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gym_cv_book"
+    android:layout_height="80dp"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/gym_iv_gymLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/gym_tv_gymId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:text="1号场地"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

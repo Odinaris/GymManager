@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBaseColor">
+    <include
+        layout="@layout/item_title"
+        android:id="@+id/confirm_gym_rl_title"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/confirm_gym_cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/confirm_gym_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="15号篮球场"
+                    android:textSize="20dp"
+                    android:textColor="#000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:text="使用时间段"
+                    android:textSize="18dp"
+                    android:textColor="#0173ec"/>
+                <TextView
+                    android:id="@+id/confirm_gym_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="2016年12月16日9:00-10:00"
+                    android:textSize="18dp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="预约器材"
+                    android:textSize="18dp"
+                    android:textColor="#0173ec"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_basketball"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_badminton"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_badmintonRacket"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_tabletennis"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_tabletennisRacket"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_tennis"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_tennisRacket"/>
+                <include
+                    layout="@layout/item_equipment"
+                    android:id="@+id/confirm_volleyball"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/confirm_gym_ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingStart="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="总价格:"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/confirm_gym_tv_cost"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="100"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/confirm_gym_cv_pay"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="#0173ec"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="付款"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

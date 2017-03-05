@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="false">
+   <include
+       layout="@layout/item_title"
+       android:id="@+id/gym_rl_title"/>
+   <android.support.design.widget.TabLayout
+       android:id="@+id/gym_tab_date"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="#0173ec"
+       app:tabMode="fixed"
+       app:tabSelectedTextColor="#ffffff"
+       app:tabTextColor="#e4e4e4"
+       app:tabIndicatorColor="#ffffff"
+       />
+   <android.support.v4.view.ViewPager
+       android:id="@+id/gym_vp_content"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

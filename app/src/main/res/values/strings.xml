@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GymManager</string>
+    <array name="applicationType">
+        <item>已预约applications</item>
+        <item>已结束applications</item>
+    </array>
+
+</resources>

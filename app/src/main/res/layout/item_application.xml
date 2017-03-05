@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/application_ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#c66f04"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/application_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14号篮球馆"
+                android:textColor="#404040"
+                android:textSize="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:orientation="horizontal"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/application_iv_typeLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预定使用时间段"
+                    android:textColor="#383838"
+                    android:textSize="14dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="2dp"/>
+                <TextView
+                    android:id="@+id/application_tv_useTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2016-12-09-8:00-9:00"
+                    android:textColor="#404040"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预定时间"
+                    android:textColor="#383838"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="2dp"/>
+                <TextView
+                    android:id="@+id/application_tv_bookTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2016-12-09-8:23:23"
+                    android:textColor="#404040"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/application_tv_cost"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="合计:10元"
+                android:textSize="15dp"
+                android:textColor="#404040"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+
+
+                <TextView
+                    android:id="@+id/application_tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="取消预约"
+                    android:textSize="14dp"
+                    android:textColor="#f20101"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"/>
+                <TextView
+                    android:id="@+id/application_tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="查看详情"
+                    android:textSize="14dp"
+                    android:textColor="#f20101"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

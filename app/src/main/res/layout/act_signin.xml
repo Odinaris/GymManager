@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signIn_container_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_color">
+    <!--_Logo -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/signIn_cv_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#00000000"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:tint="#d6d6d6"/>
+
+    </android.support.v7.widget.CardView>
+    <!-- Register -->
+    <LinearLayout
+        android:id="@+id/signIn_ll_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/signIn_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户名"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:maxLength="18"
+            android:textSize="16sp"
+            android:textColorHint="#c1c1c1"
+            tools:inputType="text"/>
+        <EditText
+            android:id="@+id/signIn_et_password"
+            android:hint="密码"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:password="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textColorHint="#c1c1c1"
+            tools:inputType="textPassword"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00000000"
+        android:layout_marginTop="20dp"
+        app:cardElevation="0dp">
+
+        <Button
+            android:id="@+id/signIn_btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="登录"
+            android:textSize="16dp"
+            android:textColor="#0173ec"
+            android:backgroundTint="#ffffff"
+             />
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signIn_tv_forget"
+            android:text="忘记密码"
+            android:layout_marginStart="24dp"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="#404040"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/signIn_tv_register"
+            android:text="没有账户？注册"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="14dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

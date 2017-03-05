@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="false">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginEnd="10dp"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="8:00-9:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="9:00-10:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="10:00-11:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="11:00-12:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="12:00-13:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="13:00-14:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="14:00-15:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="15:00-16:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="16:00-17:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="17:00-18:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="18:00-19:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="19:00-20:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:text="20:00-21:00"
+             android:textColor="#000"
+             android:textSize="14dp"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="5dp"/>
+
+
+
+      </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/room_rv_list_bookable"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+         </android.support.v7.widget.RecyclerView>
+
+
+
+      </LinearLayout>
+
+   </LinearLayout>
+</LinearLayout>
